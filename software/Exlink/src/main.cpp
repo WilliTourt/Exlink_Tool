@@ -37,7 +37,7 @@ char maxValueStr[20], minValueStr[20], peakToPeakValueStr[20]; // 存最大最�
 volatile int pulseCount = 0;
 float frequency = 0.0;
 char freqencyStr[20];
-uint16_t count = 0;
+int16_t count = 0;
 
 unsigned long previousMillis = 0; // 记录上次读取计数的时间
 
