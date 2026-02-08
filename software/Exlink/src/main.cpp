@@ -637,7 +637,7 @@ void FREcount_task() // 数字频率计任务
 
       //  计算频率（假设每次读取的时间为1秒）
       //  unsigned long frequency = count/currentinterval*1000; // 频率 = 计数值（赫兹）
-      sprintf(freqencyStr, "%d", count * 8); // 清零计数
+      sprintf(freqencyStr, "%ld", (int32_t)(count * 8)); // 清零计数
       pcnt_counter_clear(PCNT_UNIT);         // 更新数据
       previousMillis = currentMillis;        // 更新上次读取计数的时间
     }
